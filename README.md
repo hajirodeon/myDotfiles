@@ -22,20 +22,13 @@ _Manjaro adalah salah satu os turunan arch linux yang dirubah sedemikian rupa ag
 
 Aplikasi yang saya gunakan untuk mempercantik desktop saya, adalah sebagai berikut :
 
-### Neofetch
-  Informasi mengenai [Neofetch ](https://github.com/dylanaraps/neofetch)
-
-  Untuk konfigurasi seperti pada Screenshoot diatas, saya menggunakan flag --config dalam memanggil **neofetch**
+* Neofetch powered by [dylanaraps](https://github.com/dylanaraps/neofetch)
 
   > Konfigurasi dapat dilihat [disini](/neofetch)
 
-  yaitu dengan,
+* Polybar powered by
+  [jaagr](https://github.com/jaagr/polybar)
 
-  ```bash
+  Config file, [here](/.config/polybar)
 
-  neofetch --config /path/to/custom/config.conf
-
-  ```
-
-### Polybar
-see [here](/.config/polybar)
+* Vis powered by [dpayne](https://github.com/dpayne/cli-visualizer)
