@@ -1,15 +1,26 @@
+[colors]
+white = #009354
+gray = #404040
+black = #202020
+red = #E55C63
+blue = #03b12a
+yellow = #EAB937
+green = #30A990
+
 [bar/bar1]
 width = 100%
-height = 28
+height = 30
 clickareas = 35
 dock = false
 bottom = true
 top = false
-monitor = ${env:MONITOR:HDMI-1}
+monitor = ${env:MONITOR:eDP1}
 scroll-up = i3wm-wsnext
 scroll-down = i3wm-wsprev
-background = #101517
-foreground = #009354
+;override-redirect = true
+
+background = #404040
+foreground = #30A990
 
 #locale = es_ES.UTF-8
 
@@ -25,17 +36,10 @@ font-1 = MaterialIcons:size=10;0
 font-2 = FontAwesome:pixelsize=10
 
 modules-left = cpu memory temperature  backlight
-modules-center = weather date
-modules-right =  wireless-network volume battery
+modules-center = weather
+modules-right = volume battery
 
-[colors]
-white = #009354
-gray = #12b67a
-black = #202020
-red = #bf3f34
-blue = #03b12a
-yellow = #bf7a29
-green = #707d22
+
 
 
 [module/cpu]
@@ -99,10 +103,10 @@ poll-interval = 1
 format-charging = <bar-capacity> <label-charging>
 format-discharging = <bar-capacity> <label-discharging>
 bar-capacity-width = 10
-bar-capacity-foreground-0 = #ff5555
-bar-capacity-foreground-1 = #fba922
-bar-capacity-foreground-2 = ##aaff77
-bar-capacity-foreground-3 = #aaff77#
+bar-capacity-foreground-0 = ${colors.red}
+bar-capacity-foreground-1 = ${colors.yellow}
+bar-capacity-foreground-2 = ${colors.green}
+bar-capacity-foreground-3 = ${colors.green}
 bar-capacity-indicator = |
 bar-capaciyt-indicator-foreground = #ff
 bar-capacity-indicator-font = 3
@@ -112,10 +116,10 @@ bar-capacity-empty = ─
 bar-capacity-empty-font = 3
 bar-capacity-empty-foreground = #444444
 time-format = %H:%M
-label-charging =  +%percentage%
-label-discharging = -%percentage%
-label-charging-foreground = #009f51
-label-discharging-foreground = #ff5555
+label-charging =  %percentage%%
+label-discharging = %percentage%%
+label-charging-foreground = ${colors.green}
+label-discharging-foreground = ${colors.yellow}
 
 
 [module/memory]
@@ -182,31 +186,24 @@ format-padding = 4
 label = Win:%title%
 label-maxlen = 50
 
-[module/wireless-network]
+[module/wlan]
 type = internal/network
-interface = wlp3s0
+interface =
 interval = 3.0
-ping_interval = 10
 
 format-connected = <ramp-signal> <label-connected>
-label-bat = 
-#label-connected = %essid% %downspeed:9% %local_ip%
-label-connected = %essid% %downspeed:9%
-label-disconnected = Disconnected
-label-connected-foreground = #009f51
-label-disconnected-foreground = #458588
-ramp-signal-foreground = #458588
+format-connected-underline = #9f78e1
+label-connected = %essid%
 
-ramp-signal-0 = 
-ramp-signal-1 = 
-ramp-signal-2 = 
-ramp-signal-3 = 
-ramp-signal-4 = 
+format-disconnected =
+;format-disconnected = <label-disconnected>
+;format-disconnected-underline = ${self.format-connected-underline}
+;label-disconnected = %ifname% disconnected
+;label-disconnected-foreground = ${colors.foreground-alt}
 
-animation-packetloss-0 = 
-animation-packetloss-0-foreground = #ffa64c
-animation-packetloss-1 = 
-animation-packetloss-1-foreground = ${bar/top.foreground}
-animation-packetloss-framerate_ms = 500
-
-; vim:ft=dosini
+ramp-signal-0 = 
+ramp-signal-1 = 
+ramp-signal-2 = 
+ramp-signal-3 = 
+ramp-signal-4 = 
+ramp-sig
