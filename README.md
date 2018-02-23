@@ -27,6 +27,8 @@ Aplikasi yang saya gunakan untuk mempercantik desktop saya, adalah sebagai berik
 
   Untuk konfigurasi seperti pada Screenshoot diatas, saya menggunakan flag --config dalam memanggil **neofetch**
 
+  > Konfigurasi dapat dilihat [disini](/neofetch)
+
   yaitu dengan,
 
   ```bash
