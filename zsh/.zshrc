@@ -233,7 +233,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias ls='colorls -r --sf'
 alias downloadmp3='youtube-dl -x --audio-format mp3'
-alias neo='neofetch --config /home/ypraw/Programming/Linux/neofetch/config.conf'
+alias neo='neofetch --config ~/Programming/Linux/neofetch/config.conf'
 alias polibar='cd /home/ypraw/.config/polybar && ./launch.sh '
 
 #source ~/.fonts/*.sh
