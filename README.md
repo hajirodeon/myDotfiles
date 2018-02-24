@@ -8,11 +8,6 @@ My DotFiles
 
 Repository ini berisikan beberapa konfigurasi yang saya gunakan untuk dekstop linux saya.
 
-```
-Update Terakhir Friday, 23 February 2018, 22:21 wib
-
-```
-
 ## Gnome in Manjaro
 ![ss1](/Screenshoot/ss1.png)
 
