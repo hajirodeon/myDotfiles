@@ -19,7 +19,20 @@ Aplikasi yang saya gunakan untuk mempercantik desktop saya, adalah sebagai berik
 
 * Neofetch powered by [dylanaraps](https://github.com/dylanaraps/neofetch)
 
-  > Konfigurasi dapat dilihat [disini](/neofetch)
+ Konfigurasi dapat dilihat [disini](/neofetch).
+ Untuk menampilkan unicode pada custom config neofetch, gunakan command substitution pada file custom config.
+
+ contoh,
+
+ ```bash
+ info "$(perl -CS -E 'say "\x{f19c}"') " title
+ ```
+ pada contoh diatas, kode _f19c_ merupakan unicode [university](https://fontawesome.com/icons/university?style=solid) .
+
+ Saya menggunakan **font awesome** untuk glyphy yang digunakan, untuk referensi lanjutan [Font Awesome](https://fontawesome.com/).
+ 
+ Berikutnya lakukan sesuai keinginan anda.
+
 
 * Polybar powered by
   [jaagr](https://github.com/jaagr/polybar)
