@@ -24,6 +24,6 @@ Aplikasi yang saya gunakan untuk mempercantik desktop saya, adalah sebagai berik
 * Polybar powered by
   [jaagr](https://github.com/jaagr/polybar)
 
-  Config file, [here](/.config/polybar)
+  > Konfigurasi dapat dilihat [disini](/.config/polybar)
 
 * Vis powered by [dpayne](https://github.com/dpayne/cli-visualizer)
