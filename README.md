@@ -43,6 +43,10 @@ My DotFiles
 
   * Vis powered by [dpayne](https://github.com/dpayne/cli-visualizer)
 
+  * Pali color scheme powered by [myccoll](https://github.com/Mayccoll/Gogh)
+
+  * Vimix-gtk-theme-git on [AUR](https://aur.archlinux.org/packages/vimix-gtk-themes-git/)
+
 
 # **ENGLISH**
   This repository contains some configurations for my linux desktop.
