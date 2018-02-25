@@ -120,7 +120,7 @@ SPACESHIP_PYENV_SHOW=true
 SPACESHIP_PYENV_PREFIX="$SPACESHIP_PROMPT_DEFAULT_PREFIX"
 SPACESHIP_PYENV_SUFFIX="$SPACESHIP_PROMPT_DEFAULT_SUFFIX"
 SPACESHIP_PYENV_SYMBOL="🐍 "
-SPACESHIP_PYENV_COLOR="yellow"
+SPACESHIP_PYENV_COLOR="yellow"cd
 
 # JOBS
 SPACESHIP_JOBS_SHOW="true"
@@ -235,10 +235,7 @@ alias ls='colorls -r --sf'
 alias downloadmp3='youtube-dl -x --audio-format mp3'
 alias neo='neofetch --config ~/Programming/Linux/neofetch/config.conf'
 alias polibar='cd /home/ypraw/.config/polybar && ./launch.sh '
-
-#source ~/.fonts/*.sh
-
-
+#alias anaconda='source /opt/anaconda/bin/activate root'
 
 # added by Anaconda3 4.4.0 installer
 #export PATH="/home/ypraw/anaconda3/bin:$PATH"
