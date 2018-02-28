@@ -119,8 +119,8 @@ SPACESHIP_CONDA_COLOR="blue"
 SPACESHIP_PYENV_SHOW=true
 SPACESHIP_PYENV_PREFIX="$SPACESHIP_PROMPT_DEFAULT_PREFIX"
 SPACESHIP_PYENV_SUFFIX="$SPACESHIP_PROMPT_DEFAULT_SUFFIX"
-SPACESHIP_PYENV_SYMBOL="🐍 "
-SPACESHIP_PYENV_COLOR="yellow"cd
+SPACESHIP_PYENV_SYMBOL=" "
+SPACESHIP_PYENV_COLOR="yellow"
 
 # JOBS
 SPACESHIP_JOBS_SHOW="true"
@@ -235,7 +235,14 @@ alias ls='colorls -r --sf'
 alias downloadmp3='youtube-dl -x --audio-format mp3'
 alias neo='neofetch --config ~/Programming/Linux/neofetch/config.conf'
 alias polibar='cd /home/ypraw/.config/polybar && ./launch.sh '
-#alias anaconda='source /opt/anaconda/bin/activate root'
+
+# alias for php server and lamp
+alias php-server-start='sudo systemctl start httpd mysqld && sudo systemctl status httpd mysqld | grep -i --max-count=4 "httpd.service - Apache Web Server\|active:\|mariadb.service - MariaDB 10.1.31 database server"'
+alias php-server-stop='sudo systemctl stop httpd mysqld && sudo systemctl status httpd mysqld | grep -i --max-count=4 "httpd.service - Apache Web Server\|active:\|mariadb.service - MariaDB 10.1.31 database server"'
+
+alias php-server-status=' sudo systemctl status httpd mysqld | grep -i --max-count=4 "httpd.service - Apache Web Server\|active:\|mariadb.service - MariaDB 10.1.31 database server"'
+
+#alias anaconda='source /opt/anaconda/bin/activate'
 
 # added by Anaconda3 4.4.0 installer
 #export PATH="/home/ypraw/anaconda3/bin:$PATH"
